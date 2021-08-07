@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HA</string>
+    <string name="page_start_title">Voyagez facilement en vous connectant à votre certificat de test Covid-19 en toute sécurité et en toute confidentialité</string>
+    <string name="page_text_heart">Partagez le certificat de test EAC Covid-19 à jour</string>
+    <string name="page_text_arrow">Accélérez grâce à la validation Covid-19</string>
+    <string name="page_text_secure">Privé, sûr et sécurisé</string>
+    <string name="page_text_common_pass">Une collaboration CommonPass</string>
+    <string name="page_btn_get_stared">Commencer</string>
+
+
+    <string name="page_login_input_hint_username">Country MCC Code: 641</string>
+    <string name="page_login_input_hint_password">Clinic Code: 39902</string>
+    <string name="page_login_input_hint_phone">Numéro de téléphone</string>
+    <string name="page_login_input_hint_confirm_phone">Confirmer le numéro de téléphone</string>
+    <string name="page_login_btn_login">S\'identifier</string>
+
+</resources>

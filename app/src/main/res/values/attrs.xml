@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="headerView">
+    <attr name="leftString"
+          format="string"/>
+    <attr name="titleString"
+          format="string"/>
+    <attr name="rightString"
+          format="string"/>
+    <attr name="rightRes"
+          format="reference"/>
+    <attr name="backgroundColor"
+          format="color"/>
+    <attr name="textColor"
+          format="color"/>
+    <attr name="textColorLeft"
+          format="color"/>
+    <attr name="textColorTitle"
+          format="color"/>
+    <attr name="textColorRight"
+          format="color"/>
+  </declare-styleable>
+</resources>

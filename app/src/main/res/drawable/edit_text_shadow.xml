@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <!-- most important is order of layers -->
+  <item>
+    <shape android:shape="rectangle">
+      <solid android:color="@android:color/transparent" />
+    </shape>
+  </item>
+  <!-- Bottom right side 2dp Shadow -->
+  <item>
+    <shape android:shape="rectangle">
+      <solid android:color="@android:color/transparent" />
+    </shape>
+  </item>
+  <!-- Bottom 2dp Shadow -->
+  <item>
+    <shape android:shape="rectangle">
+      <solid android:color="#E0E0E0" />
+    </shape>
+  </item>
+
+  <!-- White Top color -->
+  <item android:bottom="3px" android:right="3px">
+    <shape android:shape="rectangle">
+      <solid android:color="#F2F2F2" />
+      <corners android:radius="3dp"></corners>
+    </shape>
+  </item>
+</layer-list>

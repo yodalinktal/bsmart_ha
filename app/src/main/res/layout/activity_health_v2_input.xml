@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <bsmart.technology.rru.base.utils.HeaderView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarHeight">
+
+    </bsmart.technology.rru.base.utils.HeaderView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/inputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Purposes"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_input_health">
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:entries="@array/reason"
+                        app:theme="@style/itemSpinnerStyle" />
+                </FrameLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="QR Code"
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:id="@+id/bookId"
+                    style="@style/CommonInputStyle"
+                    android:drawableRight="@drawable/icon_qrcode_small"
+                    android:hint="---" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Name"
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <EditText
+                    android:id="@+id/fullName"
+                    style="@style/CommonInputStyle"
+                    android:hint="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="ID/Passport "
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+
+                <EditText
+                    android:id="@+id/passport"
+                    style="@style/CommonInputStyle" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textTitle"
+                    android:text="1. Do you have any of the following new or worsening symptoms or signs?"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="New or worsening cough"
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_input_health">
+
+                    <Spinner
+                        android:id="@+id/test1Result"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:entries="@array/normal_check_result"
+                        app:theme="@style/itemSpinnerStyle" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Shortness of breath"
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_input_health">
+
+                    <Spinner
+                        android:id="@+id/test2Result"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:entries="@array/normal_check_result"
+                        app:theme="@style/itemSpinnerStyle" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Sore throat"
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_input_health">
+
+                    <Spinner
+                        android:id="@+id/test3Result"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:entries="@array/normal_check_result"
+                        app:theme="@style/itemSpinnerStyle" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Runny nose, sneezing or nasal congestion (in absence of underlying reasons for
+symptoms such as seasonal allergies and post nasal drip)"
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_input_health">
+
+                    <Spinner
+                        android:id="@+id/test4Result"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:entries="@array/normal_check_result"
+                        app:theme="@style/itemSpinnerStyle" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Hoarse voice"
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_input_health">
+
+                    <Spinner
+                        android:id="@+id/test5Result"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:entries="@array/normal_check_result"
+                        app:theme="@style/itemSpinnerStyle" />
+                </FrameLayout>
+            </LinearLayout>
+
+<!--            end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Difficulty swallowing"
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_input_health">
+
+                    <Spinner
+                        android:id="@+id/test6Result"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:entries="@array/normal_check_result"
+                        app:theme="@style/itemSpinnerStyle" />
+                </FrameLayout>
+            </LinearLayout>
+            <!--            end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="New smell or taste disorder(s)"
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_input_health">
+
+                    <Spinner
+                        android:id="@+id/test7Result"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:entries="@array/normal_check_result"
+                        app:theme="@style/itemSpinnerStyle" />
+                </FrameLayout>
+            </LinearLayout>
+            <!--            end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Nausea/vomiting, diarrhea, abdominal pain"
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_input_health">
+
+                    <Spinner
+                        android:id="@+id/test8Result"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:entries="@array/normal_check_result"
+                        app:theme="@style/itemSpinnerStyle" />
+                </FrameLayout>
+            </LinearLayout>
+            <!--            end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Unexplained fatigue/malaise"
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_input_health">
+
+                    <Spinner
+                        android:id="@+id/test9Result"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:entries="@array/normal_check_result"
+                        app:theme="@style/itemSpinnerStyle" />
+                </FrameLayout>
+            </LinearLayout>
+            <!--            end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Chills"
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_input_health">
+
+                    <Spinner
+                        android:id="@+id/test10Result"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:entries="@array/normal_check_result"
+                        app:theme="@style/itemSpinnerStyle" />
+                </FrameLayout>
+            </LinearLayout>
+            <!--            end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Headache"
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_input_health">
+
+                    <Spinner
+                        android:id="@+id/test11Result"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:entries="@array/normal_check_result"
+                        app:theme="@style/itemSpinnerStyle" />
+                </FrameLayout>
+            </LinearLayout>
+            <!--            end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="2. Have you travelled to COVID -19 high risk regions in the past 14 days? "
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_input_health">
+
+                    <Spinner
+                        android:id="@+id/test12Result"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:entries="@array/normal_check_result"
+                        app:theme="@style/itemSpinnerStyle" />
+                </FrameLayout>
+            </LinearLayout>
+            <!--            end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="3.Do you have a fever? "
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_input_health">
+
+                    <Spinner
+                        android:id="@+id/test13Result"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:entries="@array/normal_check_result"
+                        app:theme="@style/itemSpinnerStyle" />
+                </FrameLayout>
+            </LinearLayout>
+            <!--            end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="4. Have you had close contact with anyone with respiratory illness or a confirmed or probable case of COVID-19?"
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_input_health">
+
+                    <Spinner
+                        android:id="@+id/test14Result"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:entries="@array/normal_check_result"
+                        app:theme="@style/itemSpinnerStyle" />
+                </FrameLayout>
+            </LinearLayout>
+            <!--            end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="5. Did you wear the required and/or recommended Personal Protective Equipment (PPE) (e.g., goggles, gloves, mask and gown or N95 with aerosol generating medical procedures (AGMPs)) when you had close
+contact with a suspected or confirmed case of COVID-19?"
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_input_health">
+
+                    <Spinner
+                        android:id="@+id/test15Result"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:entries="@array/normal_check_result"
+                        app:theme="@style/itemSpinnerStyle" />
+                </FrameLayout>
+            </LinearLayout>
+            <!--            end-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Temperature in degree C"
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <EditText
+                    android:id="@+id/temperture"
+                    style="@style/CommonInputStyle"
+                    android:digits="0123456789."
+                    android:hint="36.9"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Health Declaration"
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <CheckBox
+                    android:id="@+id/healthDec"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:enabled="true"
+                    android:gravity="center_vertical"
+                    android:text="Yes"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/textTitleSecond"
+                    android:textSize="@dimen/sp_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Remarks"
+                    android:textColor="@color/textTitle"
+                    android:textSize="@dimen/sp_13" />
+
+                <EditText
+                    android:id="@+id/remark"
+                    style="@style/CommonInputStyle"
+                    android:hint="(50 chars max)"
+                    android:lines="3"
+                    android:maxLength="50" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSubmitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/login_button"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

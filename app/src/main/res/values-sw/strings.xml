@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HA</string>
+    <string name="page_start_title">Urahisi wa kusafiri kwa kuunganishwa kwenye Hati yako ya Jaribio la Covid-19 salama na faragha kamili</string>
+    <string name="page_text_heart">Shiriki Cheti cha Upimaji cha tarehe cha EAC Covid-19</string>
+    <string name="page_text_arrow">Kasi kupitia uthibitisho wa Covid-19</string>
+    <string name="page_text_secure">Binafsi, Salama na Salama</string>
+    <string name="page_text_common_pass">Mshikamano wa pamoja</string>
+    <string name="page_btn_get_stared">Anzisha</string>
+
+
+    <string name="page_login_input_hint_username">Country MCC Code: 641</string>
+    <string name="page_login_input_hint_password">Clinic Code: 39902</string>
+    <string name="page_login_input_hint_phone">Nambari ya simu</string>
+    <string name="page_login_input_hint_confirm_phone">Thibitisha nambari ya simu</string>
+    <string name="page_login_btn_login">Ingia</string>
+
+</resources>

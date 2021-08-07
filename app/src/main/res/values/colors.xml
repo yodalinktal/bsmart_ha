@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--  <color name="colorPrimary">#294FE9</color>-->
+<!--  <color name="colorPrimaryDark">#294FE9</color>-->
+<!--  <color name="colorAccent">#294FE9</color>-->
+  <color name="colorPrimary">#294FE9</color>
+  <color name="colorPrimaryDark">#294FE9</color>
+  <color name="colorAccent">#294FE9</color>
+    <color name="colorGrey">#666666</color>
+
+
+    <color name="white">#FFFFFF</color>
+  <color name="background">#FFFFFF</color>
+  <color name="transparent">#00000000</color>
+
+    <color name="textTitle">#242424</color>
+    <color name="textTitleSecond">#424242</color>
+    <color name="textCommentSecond">#9a9a9a</color>
+
+  <color name="bgDivider">#e5e5e5</color>
+
+
+</resources>
